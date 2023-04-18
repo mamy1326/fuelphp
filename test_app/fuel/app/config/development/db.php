@@ -23,9 +23,9 @@
     'default' => [
         'type'           => 'mysqli',
         'connection'     => [
-            'hostname'       => 'db',
+            'hostname'       => 'secure-connection-test.cluster-cptunb5lgmjv.ap-northeast-1.rds.amazonaws.com',
             'port'           => '3306',
-            'database'       => 'test',
+            'database'       => 'tesdb_secure_connection_testt',
         ],
     ],
 ];
