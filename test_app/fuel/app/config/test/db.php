@@ -24,10 +24,11 @@
 
 return array(
 	'default' => array(
-		'connection' => array(
-			'dsn'      => 'mysql:host=localhost;dbname=fuel_test',
-			'username' => 'fuel_app',
-			'password' => 'super_secret_password',
-		),
+        'type'           => 'mysqli',
+        'connection'     => [
+            'hostname'       => 'db',
+            'port'           => '3306',
+            'database'       => 'test',
+        ],
 	),
 );

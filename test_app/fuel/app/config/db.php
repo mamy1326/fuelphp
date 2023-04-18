@@ -7,11 +7,8 @@ return [
     'default' => [
         'type'           => 'mysqli',
         'connection'     => [
-            'hostname'       => 'db',
-            'port'           => '33060',
-            'database'       => 'test',
             'username'       => 'root',
-            'password'       => 'password',
+            'password'       => getenv('WRITER_DB_PASSWORD'),
             'persistent'     => false,
             'compress'       => false,
         ],

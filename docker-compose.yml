@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
+    environment:
+      WRITER_DB_PASSWORD: password
     volumes:
       - ./test_app/:/app
   web:
@@ -22,7 +24,7 @@ services:
       context: .
       dockerfile: ./docker/db/Dockerfile
     ports:
-      - 3306:33060
+      - 33060:3306
     environment:
       MYSQL_DATABASE: test
       MYSQL_USER: user
