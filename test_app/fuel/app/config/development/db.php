@@ -21,18 +21,11 @@
 
  return [
     'default' => [
-        'type'           => 'pdo',
+        'type'           => 'mysqli',
         'connection'     => [
-			'dsn'			=> 'mysql:host=db;port=3306;dbname=test',
-            'username'       => 'root',
-            'password'       => 'password',
-            'persistent'     => false,
-            'compress'       => false,
+            'hostname'       => 'db',
+            'port'           => '3306',
+            'database'       => 'test',
         ],
-        'identifier'     => '`',
-        'table_prefix'   => '',
-        'charset'        => 'utf8',
-        'enable_cache'   => true,
-        'profiling'      => false,
     ],
 ];

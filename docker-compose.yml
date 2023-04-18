@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
+    environment:
+      WRITER_DB_PASSWORD: password
     volumes:
       - ./test_app/:/app
   web:
