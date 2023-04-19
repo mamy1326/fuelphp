@@ -16,4 +16,8 @@ WORKDIR /app
 
 RUN composer install
 
+ARG WRITER_DB_PASSWORD
+ENV WRITER_DB_PASSWORD ${WRITER_DB_PASSWORD}
+
 ENTRYPOINT ["php", "oil", "refine"]
+CMD ["robots"]
