@@ -26,6 +26,7 @@ return array(
             'hostname'       => 'db',
             'port'           => '3306',
             'database'       => 'test',
+            'username'       => 'user'
         ],
 	),
 );

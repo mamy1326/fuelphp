@@ -24,11 +24,11 @@
 
 return array(
 	'default' => array(
-        'type'           => 'mysqli',
+        'type'           => 'pdo',
         'connection'     => [
-            'hostname'       => 'db',
+            'dsn'            => 'mysql:host=db;dbname=test',
             'port'           => '3306',
-            'database'       => 'test',
+            'username'       => 'user'
         ],
 	),
 );
