@@ -10,6 +10,17 @@ services:
       WRITER_DB_PASSWORD: password
     volumes:
       - ./test_app/:/app
+  task:
+    build:
+      context: .
+      dockerfile: ./docker/task/Dockerfile
+    environment:
+      FUEL_ENV: test
+      WRITER_DB_PASSWORD: password
+    volumes:
+      - ./test_app/:/app
+    working_dir: /app
+    command: robots
   web:
     build:
       context: .
