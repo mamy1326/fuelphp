@@ -15,3 +15,5 @@ COPY ./test_app /app
 WORKDIR /app
 
 RUN composer install
+
+ENTRYPOINT ["php", "oil", "refine"]

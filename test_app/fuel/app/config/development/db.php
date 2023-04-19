@@ -26,6 +26,7 @@
             'hostname'       => 'secure-connection-test.cluster-cptunb5lgmjv.ap-northeast-1.rds.amazonaws.com',
             'port'           => '3306',
             'database'       => 'db_secure_connection_test',
+            'username'       => 'admin',
         ],
     ],
 ];

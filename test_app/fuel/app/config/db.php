@@ -7,7 +7,6 @@ return [
     'default' => [
         'type'           => 'mysqli',
         'connection'     => [
-            'username'       => 'admin',
             'password'       => getenv('WRITER_DB_PASSWORD'),
             'persistent'     => false,
             'compress'       => false,
