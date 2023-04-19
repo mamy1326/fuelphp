@@ -4,8 +4,9 @@ namespace Fuel\Tasks;
 class Example
 {
 
-	public function run($message = 'Hello!')
+	public function run()
 	{
-		echo $message;
+        $users = \Model_User::find('all');
+        print_r($users);
 	}
 }
